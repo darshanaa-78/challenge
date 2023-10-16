@@ -1,0 +1,8 @@
+def get_value(obj, key):
+    # Convert the key to a list of keys
+    keys = key.split("/")
+    # Iterate over the keys and get the value
+    for k in keys:
+        obj = obj.get(k)
+    # Return the value
+    return obj
